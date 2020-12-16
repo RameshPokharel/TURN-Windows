@@ -1,0 +1,53 @@
+ 'url': 'turn:159.65.142.107:5002',
++        'credential': 'ramesh123',
++        'username': 'ramesh'
++      }
+
+turnserver -v -r  159.65.142.107:5002 -a -b turnuserdb.conf -c turnserver.conf -u ramesh -r 159.65.142.107:5002 -p ramesh123
+
+
+nohup turnserver -v -r  159.65.142.107:5002 -a -b turnuserdb.conf -c turnserver.conf -u ramesh -r 159.65.142.107:5002 -p ramesh123 &
+
+
+1. 
+yum install -y make gcc cc gcc-c++ wget
+yum install -y openssl-devel libevent libevent-devel mysql-devel mysql-server
+
+2.
+wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
+tar xvfz libevent-2.0.21-stable.tar.gz
+cd libevent-2.0.21-stable && ./configure
+make && make install && cd ..
+
+3.
+wget http://turnserver.open-sys.org/downloads/v3.2.3.8/turnserver-3.2.3.8.tar.gz
+tar -xvzf turnserver-3.2.3.8.tar.gz
+cd turnserver-3.2.3.8 && ./configure
+make && make install && cd ..
+
+4.
+vi /etc/turnserver/turnserver.conf
+
+5.
+listening-port=5002
+#listening-ip=159.65.142.107
+relay-ip=159.65.142.107
+external-ip=159.65.142.107
+no-stun
+min-port=49152
+max-port=65535
+verbose
+user=ramesh:ramesh123
+realm=159.65.142.107
+
+
+
+# Now press "insert" key; then "Esc" key
+# Then type:
+:wq         #-- this command will save your settings and close turnserver.conf file
+
+# if you don't want to save settings; and quite. Simply type:
+:q
+
+
+turnserver

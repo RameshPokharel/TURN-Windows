@@ -1,0 +1,34 @@
+
+wget http://turnserver.open-sys.org/downloads/v3.2.4.1/turnserver-3.2.4.1.tar.gz
+tar -xvzf turnserver-3.2.4.1.tar.gz
+cd turnserver-3.2.4.1 && ./configure
+make && make install
+
+wget http://turnserver.open-sys.org/downloads/v3.2.4.1/turnserver-3.2.3.8.tar.gz
+tar -xvzf turnserver-3.2.4.1.tar.gz
+cd turnserver-3.2.4.1
+make && make install
+
+user=ramesh:ramesh123
+listening-port=5002
+listening-ip=159.65.142.107
+
+nohup turnserver -v -r 206.189.86.156:5002 -a -b turnuserdb.conf -c turnserver.conf -u trackify -r 206.189.86.156:5002 -p trackifyturn &
+
+
+listening-port=5002
+#listening-ip=206.189.86.156
+relay-ip=206.189.86.156
+external-ip=206.189.86.156
+no-stun
+min-port=49152
+max-port=65535
+verbose
+user=trackify:trackifyturn
+realm=206.189.86.156
+
+
+
+https://dphans.github.io/pages/webrtc/webrtc_custom_stun_turn/
+
+https://www.webrtc-experiment.com/docs/TURN-server-installation-guide.html#centos

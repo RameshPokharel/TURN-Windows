@@ -1,0 +1,661 @@
+0: log file opened: /var/log/turn_1348_2020-10-07.log
+0: Relay address to use: 192.168.43.238
+0: Config file found: /etc/turnserver.conf
+0: 
+RFC 3489/5389/5766/5780/6062/6156 STUN/TURN Server
+Version Coturn-4.5.1.1 'dan Eider'
+0: 
+Max number of open files/sockets allowed for this process: 3200
+0: 
+Due to the open files/sockets limitation,
+max supported number of TURN Sessions possible is: 1000 (approximately)
+0: 
+
+==== Show him the instruments, Practical Frost: ====
+
+0: TLS supported
+0: DTLS supported
+0: DTLS 1.2 supported
+0: TURN/STUN ALPN supported
+0: Third-party authorization (oAuth) supported
+0: GCM (AEAD) supported
+0: OpenSSL compile-time version: OpenSSL 1.1.1b  26 Feb 2019 (0x1010102f)
+0: 
+0: SQLite is not supported
+0: Redis is not supported
+0: PostgreSQL supported
+0: MySQL supported
+0: MongoDB is not supported
+0: 
+0: Default Net Engine version: 2 (UDP thread per network endpoint)
+
+=====================================================
+
+0: Domain name: 
+0: Default realm: 192.168.43.238
+0: 
+CONFIG ERROR: Empty cli-password, and so telnet cli interface is disabled! Please set a non empty cli-password!
+0: 
+CONFIGURATION ALERT: you specified long-term user accounts, (-u option) 
+	but you did not specify the long-term credentials option
+	(-a or --lt-cred-mech option).
+ 	I am turning --lt-cred-mech ON for you, but double-check your configuration.
+1: WARNING: cannot find certificate file: turn_server_cert.pem (1)
+1: WARNING: cannot start TLS and DTLS listeners because certificate file is not set properly
+1: WARNING: cannot find private key file: turn_server_pkey.pem (1)
+1: WARNING: cannot start TLS and DTLS listeners because private key file is not set properly
+1: NO EXPLICIT LISTENER ADDRESS(ES) ARE CONFIGURED
+1: ===========Discovering listener addresses: =========
+1: Listener address to use: 192.168.56.1
+1: Listener address to use: 192.168.99.1
+1: Listener address to use: 198.162.50.1
+1: Listener address to use: 192.168.43.238
+1: Listener address to use: ::1
+1: Listener address to use: 127.0.0.1
+1: =====================================================
+1: Total: 4 'real' addresses discovered
+1: =====================================================
+1: pid file created: /var/run/turnserver.pid
+1: IO method (main listener thread): poll
+1: IPv4: On this platform, I am using alternative behavior of TTL according to RFC 5766.
+1: IPv6: On this platform, I am using alternative behavior of TTL (HOPLIMIT) according to RFC 6156.
+1: IPv4: On this platform, I am using alternative behavior of TOS according to RFC 5766.
+1: WARNING: I cannot support STUN CHANGE_REQUEST functionality because only one IP address is provided
+1: Wait for relay ports initialization...
+1:   relay 192.168.43.238 initialization...
+1:   relay 192.168.43.238 initialization done
+1: Relay ports initialization done
+1: IO method (general relay thread): poll
+1: turn server id=0 created
+1: IO method (general relay thread): poll
+1: turn server id=1 created
+1: IO method (general relay thread): poll
+1: turn server id=2 created
+1: IO method (general relay thread): poll
+1: IO method (general relay thread): poll
+1: turn server id=3 created
+1: IO method (general relay thread): poll
+1: turn server id=4 created
+1: turn server id=5 created
+1: IO method (general relay thread): poll
+1: IO method (general relay thread): poll
+1: IO method (udp listener/relay thread): poll
+1: turn server id=6 created
+1: turn server id=7 created
+1: turn server id=128 created
+1: IO method (udp listener/relay thread): poll
+1: turn server id=129 created
+1: IO method (udp listener/relay thread): poll
+1: turn server id=130 created
+1: IO method (udp listener/relay thread): poll
+1: turn server id=131 created
+1: IO method (udp listener/relay thread): poll
+1: turn server id=132 created
+1: IO method (udp listener/relay thread): poll
+1: turn server id=133 created
+1: IPv4. UDP listener opened on: 192.168.56.1:3478
+1: IPv4. UDP listener opened on: 192.168.99.1:3478
+1: IPv4. UDP listener opened on: 198.162.50.1:3478
+1: IPv4. UDP listener opened on: 192.168.43.238:3478
+1: IPv6. UDP listener opened on: ::1:3478
+1: IPv4. UDP listener opened on: 127.0.0.1:3478
+1: IPv4. TCP listener opened on : 192.168.56.1:3478
+1: IPv4. TCP listener opened on : 192.168.99.1:3478
+1: IPv4. TCP listener opened on : 198.162.50.1:3478
+1: IPv4. TCP listener opened on : 192.168.43.238:3478
+1: IPv6. TCP listener opened on : ::1:3478
+1: IPv4. TCP listener opened on : 127.0.0.1:3478
+1: Total UDP servers: 6
+1: Total General servers: 8
+1: IO method (auth thread): poll
+1: IO method (auth thread): poll
+1: IO method (auth thread): poll
+1: IO method (auth thread): poll
+1: IO method (admin thread): poll
+82: handle_udp_packet: New UDP endpoint: local addr 192.168.43.238:3478, remote addr 192.168.43.238:49811
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: handle_turn_command: STUN method 0x1 ignored
+224: session 131000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+224: session 131000000000000001: usage: realm=<192.168.43.238>, username=<>, rp=18, rb=432, sp=9, sb=1008
+224: session 131000000000000001: closed (2nd stage), user <> realm <192.168.43.238> origin <>, local 192.168.43.238:3478, remote 192.168.43.238:49811, reason: allocation watchdog determined stale session state
+273: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:53318
+273: handle_turn_command: STUN method 0x1 ignored
+273: session 128000000000000001: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+273: IPv4. Local relay addr: 192.168.43.238:59630
+273: session 128000000000000001: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+273: session 128000000000000001: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+273: handle_turn_command: STUN method 0x1 ignored
+274: handle_turn_command: STUN method 0x1 ignored
+275: handle_turn_command: STUN method 0x1 ignored
+277: handle_turn_command: STUN method 0x1 ignored
+281: handle_turn_command: STUN method 0x1 ignored
+289: handle_turn_command: STUN method 0x1 ignored
+297: handle_turn_command: STUN method 0x1 ignored
+305: handle_turn_command: STUN method 0x1 ignored
+313: session 128000000000000001: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+313: session 128000000000000001: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+314: session 128000000000000001: usage: realm=<192.168.43.238>, username=<testuser>, rp=12, rb=416, sp=3, sb=304
+314: session 128000000000000001: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:53318, reason: allocation timeout
+314: session 128000000000000001: delete: realm=<192.168.43.238>, username=<testuser>
+326: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:50059
+326: handle_turn_command: STUN method 0x1 ignored
+326: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:50061
+326: handle_turn_command: STUN method 0x1 ignored
+326: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:50063
+326: handle_turn_command: STUN method 0x1 ignored
+326: session 128000000000000002: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+326: session 128000000000000003: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+326: session 128000000000000004: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+326: IPv4. Local relay addr: 192.168.43.238:55347
+326: session 128000000000000003: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+326: session 128000000000000003: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+326: IPv4. Local relay addr: 192.168.43.238:63021
+326: session 128000000000000002: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+326: session 128000000000000002: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+326: IPv4. Local relay addr: 192.168.43.238:64933
+326: session 128000000000000004: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+326: session 128000000000000004: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+326: handle_turn_command: STUN method 0x1 ignored
+326: handle_turn_command: STUN method 0x1 ignored
+326: handle_turn_command: STUN method 0x1 ignored
+327: handle_turn_command: STUN method 0x1 ignored
+327: handle_turn_command: STUN method 0x1 ignored
+327: handle_turn_command: STUN method 0x1 ignored
+328: handle_turn_command: STUN method 0x1 ignored
+328: handle_turn_command: STUN method 0x1 ignored
+328: handle_turn_command: STUN method 0x1 ignored
+330: handle_turn_command: STUN method 0x1 ignored
+330: handle_turn_command: STUN method 0x1 ignored
+330: handle_turn_command: STUN method 0x1 ignored
+334: handle_turn_command: STUN method 0x1 ignored
+334: handle_turn_command: STUN method 0x1 ignored
+334: handle_turn_command: STUN method 0x1 ignored
+342: handle_turn_command: STUN method 0x1 ignored
+342: handle_turn_command: STUN method 0x1 ignored
+342: handle_turn_command: STUN method 0x1 ignored
+350: handle_turn_command: STUN method 0x1 ignored
+350: handle_turn_command: STUN method 0x1 ignored
+350: handle_turn_command: STUN method 0x1 ignored
+358: handle_turn_command: STUN method 0x1 ignored
+358: handle_turn_command: STUN method 0x1 ignored
+358: handle_turn_command: STUN method 0x1 ignored
+366: session 128000000000000002: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+366: session 128000000000000002: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+366: session 128000000000000004: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+366: session 128000000000000004: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+366: session 128000000000000003: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+366: session 128000000000000003: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+367: session 128000000000000004: usage: realm=<192.168.43.238>, username=<testuser>, rp=12, rb=416, sp=3, sb=304
+367: session 128000000000000004: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:50063, reason: allocation timeout
+367: session 128000000000000004: delete: realm=<192.168.43.238>, username=<testuser>
+367: session 128000000000000002: usage: realm=<192.168.43.238>, username=<testuser>, rp=12, rb=416, sp=3, sb=304
+367: session 128000000000000002: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:50059, reason: allocation timeout
+367: session 128000000000000002: delete: realm=<192.168.43.238>, username=<testuser>
+367: session 128000000000000003: usage: realm=<192.168.43.238>, username=<testuser>, rp=12, rb=416, sp=3, sb=304
+367: session 128000000000000003: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:50061, reason: allocation timeout
+367: session 128000000000000003: delete: realm=<192.168.43.238>, username=<testuser>
+568: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:58546
+568: handle_turn_command: STUN method 0x1 ignored
+568: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:58547
+568: handle_turn_command: STUN method 0x1 ignored
+568: session 128000000000000005: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+568: session 128000000000000006: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+568: IPv4. Local relay addr: 192.168.43.238:57609
+568: session 128000000000000005: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+568: session 128000000000000005: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+568: IPv4. Local relay addr: 192.168.43.238:56668
+568: session 128000000000000006: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+568: session 128000000000000006: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+568: session 128000000000000005: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+568: session 128000000000000005: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+568: session 128000000000000006: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+568: session 128000000000000006: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+568: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:58548
+568: handle_turn_command: STUN method 0x1 ignored
+568: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:58549
+568: handle_turn_command: STUN method 0x1 ignored
+568: session 128000000000000007: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+568: IPv4. Local relay addr: 192.168.43.238:50045
+568: session 128000000000000007: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+568: session 128000000000000007: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+568: session 128000000000000008: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+568: session 128000000000000007: peer 192.168.43.238 lifetime updated: 300
+568: session 128000000000000007: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+568: IPv4. Local relay addr: 192.168.43.238:53868
+568: session 128000000000000008: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+568: session 128000000000000008: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+568: session 128000000000000008: peer 192.168.43.238 lifetime updated: 300
+568: session 128000000000000008: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+568: handle_turn_command: STUN method 0x1 ignored
+568: handle_turn_command: STUN method 0x1 ignored
+568: handle_turn_command: STUN method 0x1 ignored
+568: handle_turn_command: STUN method 0x1 ignored
+569: session 128000000000000005: usage: realm=<192.168.43.238>, username=<testuser>, rp=4, rb=256, sp=3, sb=304
+569: session 128000000000000005: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:58546, reason: allocation timeout
+569: session 128000000000000005: delete: realm=<192.168.43.238>, username=<testuser>
+569: session 128000000000000006: usage: realm=<192.168.43.238>, username=<testuser>, rp=4, rb=256, sp=3, sb=304
+569: session 128000000000000006: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:58547, reason: allocation timeout
+569: session 128000000000000006: delete: realm=<192.168.43.238>, username=<testuser>
+569: handle_turn_command: STUN method 0x1 ignored
+569: handle_turn_command: STUN method 0x1 ignored
+571: handle_turn_command: STUN method 0x1 ignored
+571: handle_turn_command: STUN method 0x1 ignored
+575: handle_turn_command: STUN method 0x1 ignored
+575: handle_turn_command: STUN method 0x1 ignored
+583: handle_turn_command: STUN method 0x1 ignored
+583: handle_turn_command: STUN method 0x1 ignored
+591: handle_turn_command: STUN method 0x1 ignored
+592: handle_turn_command: STUN method 0x1 ignored
+600: handle_turn_command: STUN method 0x1 ignored
+600: handle_turn_command: STUN method 0x1 ignored
+634: session 128000000000000007: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+634: session 128000000000000007: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+634: session 128000000000000008: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+634: session 128000000000000008: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+635: session 128000000000000007: usage: realm=<192.168.43.238>, username=<testuser>, rp=74, rb=8576, sp=4, sb=380
+635: session 128000000000000007: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:58548, reason: allocation timeout
+635: session 128000000000000007: delete: realm=<192.168.43.238>, username=<testuser>
+635: session 128000000000000007: peer 192.168.43.238 deleted
+635: session 128000000000000008: usage: realm=<192.168.43.238>, username=<testuser>, rp=74, rb=8576, sp=4, sb=380
+635: session 128000000000000008: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:58549, reason: allocation timeout
+635: session 128000000000000008: delete: realm=<192.168.43.238>, username=<testuser>
+635: session 128000000000000008: peer 192.168.43.238 deleted
+743: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:54404
+743: handle_turn_command: STUN method 0x1 ignored
+743: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:54406
+743: handle_turn_command: STUN method 0x1 ignored
+743: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:54408
+743: handle_turn_command: STUN method 0x1 ignored
+743: session 128000000000000009: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+743: session 128000000000000010: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+743: session 128000000000000011: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+743: IPv4. Local relay addr: 192.168.43.238:57596
+743: session 128000000000000010: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+743: session 128000000000000010: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+743: IPv4. Local relay addr: 192.168.43.238:54692
+743: session 128000000000000011: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+743: session 128000000000000011: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+743: IPv4. Local relay addr: 192.168.43.238:50053
+743: session 128000000000000009: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+743: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+744: handle_turn_command: STUN method 0x1 ignored
+744: handle_turn_command: STUN method 0x1 ignored
+744: handle_turn_command: STUN method 0x1 ignored
+744: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:54410
+744: handle_turn_command: STUN method 0x1 ignored
+744: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:54411
+744: handle_turn_command: STUN method 0x1 ignored
+744: session 128000000000000012: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+744: session 128000000000000013: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+744: IPv4. Local relay addr: 192.168.43.238:53693
+744: session 128000000000000012: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+744: session 128000000000000012: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+744: IPv4. Local relay addr: 192.168.43.238:64076
+744: session 128000000000000013: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+744: session 128000000000000013: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+744: handle_turn_command: STUN method 0x1 ignored
+744: handle_turn_command: STUN method 0x1 ignored
+744: session 128000000000000010: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+744: session 128000000000000010: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+744: session 128000000000000011: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+744: session 128000000000000011: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+744: handle_turn_command: STUN method 0x1 ignored
+744: session 128000000000000009: peer 10.0.2.16 lifetime updated: 300
+744: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+744: handle_turn_command: STUN method 0x1 ignored
+744: handle_turn_command: STUN method 0x1 ignored
+745: session 128000000000000009: peer 10.0.2.16 lifetime updated: 300
+745: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: session 128000000000000013: peer 192.168.43.238 lifetime updated: 300
+745: session 128000000000000013: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: session 128000000000000012: peer 192.168.43.238 lifetime updated: 300
+745: session 128000000000000012: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, error 403: Forbidden IP
+745: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet message processed, error 403: Forbidden IP
+745: session 128000000000000010: usage: realm=<192.168.43.238>, username=<testuser>, rp=5, rb=276, sp=3, sb=304
+745: session 128000000000000010: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:54406, reason: allocation timeout
+745: session 128000000000000010: delete: realm=<192.168.43.238>, username=<testuser>
+745: session 128000000000000011: usage: realm=<192.168.43.238>, username=<testuser>, rp=5, rb=276, sp=3, sb=304
+745: session 128000000000000011: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:54408, reason: allocation timeout
+745: session 128000000000000011: delete: realm=<192.168.43.238>, username=<testuser>
+745: handle_turn_command: STUN method 0x1 ignored
+745: session 128000000000000009: peer 192.168.43.238 lifetime updated: 300
+745: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: session 128000000000000012: peer 192.168.43.238 lifetime updated: 600
+745: session 128000000000000012: realm <192.168.43.238> user <testuser>: incoming packet CHANNEL_BIND processed, success
+745: session 128000000000000009: peer 192.168.43.238 lifetime updated: 600
+745: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CHANNEL_BIND processed, success
+745: session 128000000000000013: peer 192.168.43.238 lifetime updated: 300
+745: session 128000000000000013: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: session 128000000000000012: peer 192.168.43.238 lifetime updated: 300
+745: session 128000000000000012: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: session 128000000000000009: peer 192.168.43.238 lifetime updated: 300
+745: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+745: handle_turn_command: STUN method 0x1 ignored
+745: handle_turn_command: STUN method 0x1 ignored
+746: session 128000000000000009: peer 192.168.43.238 lifetime updated: 300
+746: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+746: session 128000000000000009: peer 192.168.43.238 lifetime updated: 300
+746: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+747: handle_turn_command: STUN method 0x1 ignored
+747: handle_turn_command: STUN method 0x1 ignored
+747: handle_turn_command: STUN method 0x1 ignored
+751: handle_turn_command: STUN method 0x1 ignored
+751: handle_turn_command: STUN method 0x1 ignored
+752: handle_turn_command: STUN method 0x1 ignored
+759: handle_turn_command: STUN method 0x1 ignored
+760: handle_turn_command: STUN method 0x1 ignored
+760: handle_turn_command: STUN method 0x1 ignored
+767: handle_turn_command: STUN method 0x1 ignored
+768: handle_turn_command: STUN method 0x1 ignored
+768: handle_turn_command: STUN method 0x1 ignored
+775: handle_turn_command: STUN method 0x1 ignored
+776: handle_turn_command: STUN method 0x1 ignored
+776: handle_turn_command: STUN method 0x1 ignored
+787: session 128000000000000012: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+787: session 128000000000000012: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+787: session 128000000000000013: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+787: session 128000000000000013: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+788: session 128000000000000012: usage: realm=<192.168.43.238>, username=<testuser>, rp=721, rb=320080, sp=682, sb=52894
+788: session 128000000000000012: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:54410, reason: allocation timeout
+788: session 128000000000000012: delete: realm=<192.168.43.238>, username=<testuser>
+788: session 128000000000000012: peer 192.168.43.238 deleted
+788: session 128000000000000013: usage: realm=<192.168.43.238>, username=<testuser>, rp=26, rb=2216, sp=11, sb=1248
+788: session 128000000000000013: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:54411, reason: allocation timeout
+788: session 128000000000000013: delete: realm=<192.168.43.238>, username=<testuser>
+788: session 128000000000000013: peer 192.168.43.238 deleted
+914: session 128000000000000009: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+914: session 128000000000000009: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+915: session 128000000000000009: usage: realm=<192.168.43.238>, username=<testuser>, rp=997, rb=89781, sp=717, sb=320584
+915: session 128000000000000009: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:54404, reason: allocation timeout
+915: session 128000000000000009: delete: realm=<192.168.43.238>, username=<testuser>
+915: session 128000000000000009: peer 10.0.2.16 deleted
+915: session 128000000000000009: peer 192.168.43.238 deleted
+981: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:62864
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:62866
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:62868
+981: handle_turn_command: STUN method 0x1 ignored
+981: session 128000000000000014: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+981: session 128000000000000015: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+981: session 128000000000000016: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+981: IPv4. Local relay addr: 192.168.43.238:57996
+981: session 128000000000000014: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+981: session 128000000000000014: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+981: IPv4. Local relay addr: 192.168.43.238:49879
+981: session 128000000000000015: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+981: session 128000000000000015: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+981: IPv4. Local relay addr: 192.168.43.238:49992
+981: session 128000000000000016: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+981: session 128000000000000016: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_turn_command: STUN method 0x1 ignored
+981: handle_turn_command: STUN method 0x1 ignored
+982: session 128000000000000015: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+982: session 128000000000000015: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+982: session 128000000000000016: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+982: session 128000000000000016: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+982: session 128000000000000014: peer 10.145.192.194 lifetime updated: 300
+982: session 128000000000000014: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+982: handle_turn_command: STUN method 0x1 ignored
+983: session 128000000000000014: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, error 403: Forbidden IP
+983: session 128000000000000014: realm <192.168.43.238> user <testuser>: incoming packet message processed, error 403: Forbidden IP
+983: session 128000000000000015: usage: realm=<192.168.43.238>, username=<testuser>, rp=6, rb=296, sp=3, sb=304
+983: session 128000000000000015: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:62866, reason: allocation timeout
+983: session 128000000000000015: delete: realm=<192.168.43.238>, username=<testuser>
+983: session 128000000000000016: usage: realm=<192.168.43.238>, username=<testuser>, rp=6, rb=296, sp=3, sb=304
+983: session 128000000000000016: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:62868, reason: allocation timeout
+983: session 128000000000000016: delete: realm=<192.168.43.238>, username=<testuser>
+983: session 128000000000000014: peer 192.168.43.238 lifetime updated: 300
+983: session 128000000000000014: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+984: handle_turn_command: STUN method 0x1 ignored
+988: handle_turn_command: STUN method 0x1 ignored
+996: handle_turn_command: STUN method 0x1 ignored
+1004: handle_turn_command: STUN method 0x1 ignored
+1012: handle_turn_command: STUN method 0x1 ignored
+1043: session 128000000000000014: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1043: session 128000000000000014: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1044: session 128000000000000014: usage: realm=<192.168.43.238>, username=<testuser>, rp=126, rb=15836, sp=6, sb=552
+1044: session 128000000000000014: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:62864, reason: allocation timeout
+1044: session 128000000000000014: delete: realm=<192.168.43.238>, username=<testuser>
+1044: session 128000000000000014: peer 10.145.192.194 deleted
+1044: session 128000000000000014: peer 192.168.43.238 deleted
+1058: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:60498
+1058: handle_turn_command: STUN method 0x1 ignored
+1058: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:60500
+1058: handle_turn_command: STUN method 0x1 ignored
+1058: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:60502
+1058: handle_turn_command: STUN method 0x1 ignored
+1058: session 128000000000000017: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1058: session 128000000000000018: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1058: session 128000000000000019: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1058: IPv4. Local relay addr: 192.168.43.238:53579
+1058: session 128000000000000019: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1058: session 128000000000000019: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1058: IPv4. Local relay addr: 192.168.43.238:60934
+1058: session 128000000000000018: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1058: session 128000000000000018: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1058: IPv4. Local relay addr: 192.168.43.238:63199
+1058: session 128000000000000017: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1058: session 128000000000000017: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1059: handle_turn_command: STUN method 0x1 ignored
+1059: handle_turn_command: STUN method 0x1 ignored
+1059: handle_turn_command: STUN method 0x1 ignored
+1059: handle_turn_command: STUN method 0x1 ignored
+1059: handle_turn_command: STUN method 0x1 ignored
+1059: handle_turn_command: STUN method 0x1 ignored
+1059: session 128000000000000018: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1059: session 128000000000000018: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1059: session 128000000000000019: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1059: session 128000000000000019: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1060: session 128000000000000017: peer 10.145.192.194 lifetime updated: 300
+1060: session 128000000000000017: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+1060: handle_turn_command: STUN method 0x1 ignored
+1060: session 128000000000000017: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, error 403: Forbidden IP
+1060: session 128000000000000017: realm <192.168.43.238> user <testuser>: incoming packet message processed, error 403: Forbidden IP
+1060: session 128000000000000018: usage: realm=<192.168.43.238>, username=<testuser>, rp=6, rb=296, sp=3, sb=304
+1060: session 128000000000000018: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:60500, reason: allocation timeout
+1060: session 128000000000000018: delete: realm=<192.168.43.238>, username=<testuser>
+1060: session 128000000000000019: usage: realm=<192.168.43.238>, username=<testuser>, rp=6, rb=296, sp=3, sb=304
+1060: session 128000000000000019: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:60502, reason: allocation timeout
+1060: session 128000000000000019: delete: realm=<192.168.43.238>, username=<testuser>
+1060: session 128000000000000017: peer 192.168.43.238 lifetime updated: 300
+1060: session 128000000000000017: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+1062: handle_turn_command: STUN method 0x1 ignored
+1066: handle_turn_command: STUN method 0x1 ignored
+1074: handle_turn_command: STUN method 0x1 ignored
+1082: handle_turn_command: STUN method 0x1 ignored
+1090: handle_turn_command: STUN method 0x1 ignored
+1179: session 128000000000000017: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1179: session 128000000000000017: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1180: session 128000000000000017: usage: realm=<192.168.43.238>, username=<testuser>, rp=125, rb=15700, sp=6, sb=552
+1180: session 128000000000000017: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:60498, reason: allocation timeout
+1180: session 128000000000000017: delete: realm=<192.168.43.238>, username=<testuser>
+1180: session 128000000000000017: peer 10.145.192.194 deleted
+1180: session 128000000000000017: peer 192.168.43.238 deleted
+1265: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:64368
+1265: handle_turn_command: STUN method 0x1 ignored
+1265: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:64370
+1265: handle_turn_command: STUN method 0x1 ignored
+1265: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:64372
+1265: handle_turn_command: STUN method 0x1 ignored
+1265: session 128000000000000020: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1265: session 128000000000000021: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1265: session 128000000000000022: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1265: IPv4. Local relay addr: 192.168.43.238:49424
+1265: session 128000000000000021: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1265: session 128000000000000021: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1265: IPv4. Local relay addr: 192.168.43.238:55132
+1265: session 128000000000000022: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1265: session 128000000000000022: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1265: IPv4. Local relay addr: 192.168.43.238:65150
+1265: session 128000000000000020: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1265: session 128000000000000020: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1265: handle_turn_command: STUN method 0x1 ignored
+1265: handle_turn_command: STUN method 0x1 ignored
+1265: handle_turn_command: STUN method 0x1 ignored
+1266: handle_turn_command: STUN method 0x1 ignored
+1266: handle_turn_command: STUN method 0x1 ignored
+1266: handle_turn_command: STUN method 0x1 ignored
+1266: session 128000000000000021: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1266: session 128000000000000021: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1266: session 128000000000000022: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1266: session 128000000000000022: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1266: session 128000000000000020: peer 10.145.192.194 lifetime updated: 300
+1266: session 128000000000000020: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+1266: session 128000000000000020: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, error 403: Forbidden IP
+1266: session 128000000000000020: realm <192.168.43.238> user <testuser>: incoming packet message processed, error 403: Forbidden IP
+1266: session 128000000000000020: peer 192.168.43.238 lifetime updated: 300
+1266: session 128000000000000020: realm <192.168.43.238> user <testuser>: incoming packet CREATE_PERMISSION processed, success
+1267: handle_turn_command: STUN method 0x1 ignored
+1267: session 128000000000000021: usage: realm=<192.168.43.238>, username=<testuser>, rp=6, rb=296, sp=3, sb=304
+1267: session 128000000000000021: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:64370, reason: allocation timeout
+1267: session 128000000000000021: delete: realm=<192.168.43.238>, username=<testuser>
+1267: session 128000000000000022: usage: realm=<192.168.43.238>, username=<testuser>, rp=6, rb=296, sp=3, sb=304
+1267: session 128000000000000022: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:64372, reason: allocation timeout
+1267: session 128000000000000022: delete: realm=<192.168.43.238>, username=<testuser>
+1269: handle_turn_command: STUN method 0x1 ignored
+1273: handle_turn_command: STUN method 0x1 ignored
+1281: handle_turn_command: STUN method 0x1 ignored
+1289: handle_turn_command: STUN method 0x1 ignored
+1297: handle_turn_command: STUN method 0x1 ignored
+1498: session 128000000000000020: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1661: session 128000000000000020: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1661: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:56472
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:56474
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:56476
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: session 128000000000000024: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: session 128000000000000025: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000023: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:64146
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:64148
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_udp_packet: New UDP endpoint: local addr 192.168.56.1:3478, remote addr 192.168.56.1:64150
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: handle_turn_command: STUN method 0x1 ignored
+1661: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1661: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000020: usage: realm=<192.168.43.238>, username=<testuser>, rp=123, rb=15428, sp=6, sb=552
+1662: session 128000000000000020: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:64368, reason: allocation timeout
+1662: session 128000000000000020: delete: realm=<192.168.43.238>, username=<testuser>
+1662: session 128000000000000020: peer 10.145.192.194 deleted
+1662: session 128000000000000020: peer 192.168.43.238 deleted
+1662: session 128000000000000023: usage: realm=<192.168.43.238>, username=<>, rp=15, rb=356, sp=7, sb=784
+1662: session 128000000000000023: closed (2nd stage), user <> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:56472, reason: allocation watchdog determined stale session state
+1662: session 128000000000000024: usage: realm=<192.168.43.238>, username=<>, rp=3, rb=68, sp=1, sb=112
+1662: session 128000000000000024: closed (2nd stage), user <> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:56474, reason: allocation watchdog determined stale session state
+1662: session 128000000000000025: usage: realm=<192.168.43.238>, username=<>, rp=3, rb=68, sp=1, sb=112
+1662: session 128000000000000025: closed (2nd stage), user <> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:56476, reason: allocation watchdog determined stale session state
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: handle_turn_command: STUN method 0x1 ignored
+1662: session 128000000000000026: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000027: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: session 128000000000000028: realm <192.168.43.238> user <>: incoming packet message processed, error 401: Unauthorized
+1662: IPv4. Local relay addr: 192.168.43.238:53658
+1662: session 128000000000000028: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1662: session 128000000000000028: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1662: IPv4. Local relay addr: 192.168.43.238:59250
+1662: session 128000000000000026: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1662: session 128000000000000026: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1662: IPv4. Local relay addr: 192.168.43.238:64172
+1662: session 128000000000000027: new, realm=<192.168.43.238>, username=<testuser>, lifetime=600
+1662: session 128000000000000027: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1662: session 128000000000000026: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1662: session 128000000000000027: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1662: session 128000000000000028: realm <192.168.43.238> user <testuser>: incoming packet ALLOCATE processed, success
+1669: session 128000000000000026: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1669: session 128000000000000026: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1669: session 128000000000000028: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1669: session 128000000000000028: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1669: session 128000000000000027: refreshed, realm=<192.168.43.238>, username=<testuser>, lifetime=0
+1669: session 128000000000000027: realm <192.168.43.238> user <testuser>: incoming packet REFRESH processed, success
+1670: session 128000000000000028: usage: realm=<192.168.43.238>, username=<testuser>, rp=21, rb=744, sp=12, sb=1308
+1670: session 128000000000000028: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:64150, reason: allocation timeout
+1670: session 128000000000000028: delete: realm=<192.168.43.238>, username=<testuser>
+1670: session 128000000000000026: usage: realm=<192.168.43.238>, username=<testuser>, rp=21, rb=744, sp=12, sb=1308
+1670: session 128000000000000026: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:64146, reason: allocation timeout
+1670: session 128000000000000026: delete: realm=<192.168.43.238>, username=<testuser>
+1670: session 128000000000000027: usage: realm=<192.168.43.238>, username=<testuser>, rp=21, rb=744, sp=12, sb=1308
+1670: session 128000000000000027: closed (2nd stage), user <testuser> realm <192.168.43.238> origin <>, local 192.168.56.1:3478, remote 192.168.56.1:64148, reason: allocation timeout
+1670: session 128000000000000027: delete: realm=<192.168.43.238>, username=<testuser>
